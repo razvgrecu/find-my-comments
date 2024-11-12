@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Find My Comments
+
+find-my-comments:
+  bitbucket:
+    authentication:
+      username: <atlassian-username>
+      password: <bb-app-password>
+    workspace: <workspace-name>
+    repository: <repo-name>
+    base-url: https://api.bitbucket.org/2.0/repositories
