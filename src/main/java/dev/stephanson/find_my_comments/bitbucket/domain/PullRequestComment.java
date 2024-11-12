@@ -11,6 +11,7 @@ public record PullRequestComment(
     Boolean pending,
     PullRequestCommentContent content,
     Author user,
+    @JsonProperty("pull_request") CommentPullRequest pullRequest,
     @JsonProperty("created_on") Instant createdOn,
     @JsonProperty("updated_on") Instant updatedOn
 ) {
